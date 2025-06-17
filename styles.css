@@ -68,7 +68,6 @@ nav.scrolled {
 }
 
 .hamburger {
-    z-index: 1001;
     display: none;
     flex-direction: column;
     cursor: pointer;
@@ -434,7 +433,7 @@ nav.scrolled {
 .testimonial-content p {
     font-size: 1rem;
     line-height: 1.6;
-    color: #e0e0e0;
+    color: #ffffff;
     font-style: italic;
 }
 
