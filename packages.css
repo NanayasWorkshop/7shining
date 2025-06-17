@@ -1,0 +1,481 @@
+/* Packages Page Specific Styles */
+
+/* Packages Hero Section */
+.packages-hero {
+    padding: 8rem 0 4rem;
+    background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+    text-align: center;
+    position: relative;
+}
+
+.packages-hero .hero-content h1 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+}
+
+.packages-hero .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    opacity: 0.8;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #007aff;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    color: #cccccc;
+}
+
+/* Packages Section */
+.packages {
+    padding: 6rem 0;
+    background: #1a1a1a;
+}
+
+.packages h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.packages-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    opacity: 0.8;
+    margin-bottom: 4rem;
+    color: #e0e0e0;
+}
+
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.package-card {
+    background: #2a2a2a;
+    border-radius: 16px;
+    padding: 2.5rem;
+    border: 2px solid #333333;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.package-card:hover {
+    transform: translateY(-8px);
+    border-color: #007aff;
+    box-shadow: 0 20px 40px rgba(0, 122, 255, 0.1);
+}
+
+.package-card.premium {
+    border-color: #007aff;
+    background: linear-gradient(145deg, #2a2a2a 0%, #2f2f2f 100%);
+}
+
+.package-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #007aff;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.package-header h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.package-description {
+    font-size: 1rem;
+    opacity: 0.7;
+    margin-bottom: 2rem;
+    color: #cccccc;
+}
+
+.package-price {
+    margin-bottom: 2rem;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #007aff;
+}
+
+.period {
+    font-size: 1rem;
+    opacity: 0.7;
+    margin-left: 0.5rem;
+    color: #cccccc;
+}
+
+.package-features {
+    margin-bottom: 2rem;
+    flex-grow: 1;
+}
+
+.package-features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.package-features li {
+    padding: 0.5rem 0;
+    font-size: 0.95rem;
+    color: #e0e0e0;
+    border-bottom: 1px solid #333333;
+}
+
+.package-features li:last-child {
+    border-bottom: none;
+}
+
+.package-details {
+    background: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border: 1px solid #333333;
+}
+
+.package-details p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #cccccc;
+}
+
+.package-details p:last-child {
+    margin-bottom: 0;
+}
+
+.package-button {
+    width: 100%;
+    background: #007aff;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: auto;
+}
+
+.package-button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+.premium .package-button {
+    background: linear-gradient(135deg, #007aff 0%, #0056b3 100%);
+}
+
+/* Process Section */
+.process {
+    padding: 6rem 0;
+    background: #222222;
+}
+
+.process h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: #ffffff;
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.process-step {
+    text-align: center;
+    padding: 2rem;
+    background: #2a2a2a;
+    border-radius: 12px;
+    border: 1px solid #333333;
+}
+
+.step-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.process-step h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.process-step p {
+    font-size: 0.95rem;
+    opacity: 0.8;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+/* Transparency Section */
+.transparency {
+    padding: 6rem 0;
+    background: #1a1a1a;
+}
+
+.transparency-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.transparency-text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+}
+
+.transparency-text p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+    line-height: 1.7;
+    color: #e0e0e0;
+}
+
+.transparency-points {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.point h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.point p {
+    font-size: 0.95rem;
+    opacity: 0.7;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+.transparency-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trust-badge {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(135deg, #007aff 0%, #0056b3 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 20px 40px rgba(0, 122, 255, 0.2);
+}
+
+.badge-content {
+    text-align: center;
+    color: white;
+}
+
+.badge-icon {
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.badge-text {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 6rem 0;
+    background: #222222;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: #ffffff;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.faq-item {
+    background: #2a2a2a;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #333333;
+}
+
+.faq-item h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.faq-item p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    opacity: 0.8;
+    color: #e0e0e0;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #007aff 0%, #0056b3 100%);
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-buttons .cta-button {
+    background: #ffffff;
+    color: #007aff;
+}
+
+.cta-buttons .cta-button:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+.cta-buttons .secondary-button {
+    background: transparent;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.cta-buttons .secondary-button:hover {
+    background: #ffffff;
+    color: #007aff;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .packages-hero {
+        padding: 6rem 0 3rem;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .packages-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .package-card {
+        padding: 2rem;
+    }
+    
+    .transparency-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .trust-badge {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-buttons .cta-button,
+    .cta-buttons .secondary-button {
+        width: 250px;
+    }
+    
+    .process-steps {
+        grid-template-columns: 1fr;
+    }
+    
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+}

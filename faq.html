@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Häufige Fragen - 7Shining</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html" style="color: inherit; text-decoration: none;">7Shining</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Über uns</a></li>
+                <li><a href="packages.html">Pakete</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="index.html#contact">Kontakt</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="faq-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Häufige Fragen</h1>
+                <p>Hier findest du Antworten auf die am häufigsten gestellten Fragen zu 7Shining, unseren Depot-Paketen und der Mitgliedschaft.</p>
+                
+                <div class="search-box">
+                    <input type="text" id="faq-search" placeholder="Suche nach einem Thema oder Stichwort...">
+                    <div class="search-icon">🔍</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Categories -->
+    <section class="faq-categories">
+        <div class="container">
+            <h2>Kategorien</h2>
+            <div class="category-tabs">
+                <button class="tab-button active" data-category="all">Alle Fragen</button>
+                <button class="tab-button" data-category="membership">Mitgliedschaft</button>
+                <button class="tab-button" data-category="packages">Depot-Pakete</button>
+                <button class="tab-button" data-category="payment">Zahlung & Kosten</button>
+                <button class="tab-button" data-category="delivery">Lieferung & Versand</button>
+                <button class="tab-button" data-category="technical">Technisches</button>
+                <button class="tab-button" data-category="legal">Rechtliches</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <section class="faq-content">
+        <div class="container">
+            <div class="faq-list">
+                <!-- Mitgliedschaft -->
+                <div class="faq-item" data-category="membership">
+                    <div class="faq-question">
+                        <h3>Was ist 7Shining genau?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>7Shining ist ein Schweizer Verein, der sich der Förderung von Gemeinschaft, persönlichem Wachstum und finanzieller Bildung verschrieben hat. Wir bieten unseren Mitgliedern verschiedene Programme zur persönlichen und finanziellen Entwicklung, einschließlich Depot-Paketen für Goldbarren-Sparpläne.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="membership">
+                    <div class="faq-question">
+                        <h3>Wie werde ich Mitglied bei 7Shining?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Die Anmeldung erfolgt ganz einfach über unser Online-Portal. Nach der Registrierung und Zahlung der einmaligen Startgebühr von CHF 29 erhalten Sie Zugang zu Ihrem persönlichen Mitgliederbereich und können Ihr gewünschtes Depot-Paket auswählen.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="membership">
+                    <div class="faq-question">
+                        <h3>Was ist der Unterschied zwischen normaler und aktiver Mitgliedschaft?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Normale Mitglieder nutzen unsere Depot-Programme für ihre persönlichen Sparziele. Aktive Mitglieder können zusätzlich andere Menschen für 7Shining gewinnen und erhalten dafür Provisionen gemäß unserem Marketingplan. Aktive Mitglieder zahlen einen jährlichen Mitgliedsbeitrag von CHF 29.</p>
+                    </div>
+                </div>
+
+                <!-- Depot-Pakete -->
+                <div class="faq-item" data-category="packages">
+                    <div class="faq-question">
+                        <h3>Welche Depot-Pakete gibt es?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Wir bieten drei Depot-Pakete an:</p>
+                        <ul>
+                            <li><strong>Standard:</strong> CHF 40-100 monatlich, 1g Goldbarren</li>
+                            <li><strong>Premium:</strong> CHF 40-200 monatlich, 1g Goldbarren + erweiterte Services</li>
+                            <li><strong>VIP:</strong> Ab CHF 40 unbegrenzt, frei wählbare Barrengrößen + persönlicher Betreuer</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="packages">
+                    <div class="faq-question">
+                        <h3>Wie wird der Goldpreis berechnet?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Die Goldbarren werden nach dem aktuellen Tagespreis zum Zeitpunkt der Rechnungslegung berechnet. So erhalten Sie immer faire Marktpreise ohne Aufschläge auf veraltete Kurse.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="packages">
+                    <div class="faq-question">
+                        <h3>Kann ich mein Paket später wechseln?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ja, Sie können jederzeit zwischen den Paketen wechseln. Kontaktieren Sie einfach unseren Support für die Umstellung. Ein Upgrade ist sofort möglich, bei einem Downgrade gilt die Änderung ab dem nächsten Abrechnungszeitraum.</p>
+                    </div>
+                </div>
+
+                <!-- Zahlung & Kosten -->
+                <div class="faq-item" data-category="payment">
+                    <div class="faq-question">
+                        <h3>Welche Kosten entstehen?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Die Kosten sind vollständig transparent:</p>
+                        <ul>
+                            <li>Einmalige Startgebühr: CHF 29</li>
+                            <li>Monatliche Sparrate: Je nach gewähltem Paket</li>
+                            <li>Versandkosten: Trägt das Mitglied</li>
+                            <li>Aktive Mitgliedschaft: CHF 29 jährlich</li>
+                        </ul>
+                        <p>Keine versteckten Gebühren oder Überraschungen!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="payment">
+                    <div class="faq-question">
+                        <h3>Welche Zahlungsmethoden werden akzeptiert?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Wir akzeptieren folgende Zahlungsmethoden:</p>
+                        <ul>
+                            <li>Banküberweisung (empfohlen)</li>
+                            <li>Dauerauftrag</li>
+                            <li>SEPA-Lastschrift (wo verfügbar)</li>
+                        </ul>
+                        <p>Alle Zahlungen müssen gebührenfrei auf unserem Konto eingehen.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="payment">
+                    <div class="faq-question">
+                        <h3>Was passiert bei Nichtzahlung?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Wird die monatliche Sparrate zwei Monate in Folge nicht bezahlt, wird das Depot automatisch aufgelöst. Ein eventuell vorhandenes Restguthaben wird auf schriftliche Anfrage an depot@7shining.com ausbezahlt.</p>
+                    </div>
+                </div>
+
+                <!-- Lieferung & Versand -->
+                <div class="faq-item" data-category="delivery">
+                    <div class="faq-question">
+                        <h3>Wie oft erhalte ich Goldbarren?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Die Auslieferung erfolgt quartalsweise (alle 3 Monate). Die gesparten Beträge werden gesammelt und entsprechend dem Tagespreis in Goldbarren umgewandelt. Überschüsse werden für die nächste Lieferung gutgeschrieben.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="delivery">
+                    <div class="faq-question">
+                        <h3>Wie sicher ist die Lieferung?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Alle Lieferungen erfolgen vollständig versichert direkt zu Ihrer Adresse. Das Risiko während des Transports liegt beim Mitglied, ist aber durch die Versicherung abgedeckt. Bei Verlust oder Beschädigung wickeln Sie den Schaden direkt mit der Transportversicherung ab.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="delivery">
+                    <div class="faq-question">
+                        <h3>Kann ich international liefern lassen?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ja, wir liefern international. Bei internationalen Lieferungen trägt das Mitglied etwaige Einfuhrzölle, Steuern oder Gebühren selbst. Bitte informieren Sie sich über die Einfuhrbestimmungen in Ihrem Land.</p>
+                    </div>
+                </div>
+
+                <!-- Technisches -->
+                <div class="faq-item" data-category="technical">
+                    <div class="faq-question">
+                        <h3>Wie funktioniert der Mitgliederbereich?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nach der Anmeldung erhalten Sie Zugang zu Ihrem persönlichen Mitgliederbereich. Dort können Sie Ihre Daten verwalten, Depot-Einstellungen ändern, Abrechnungen einsehen und den Support kontaktieren. Vergessen Sie nicht, Ihre Daten aktuell zu halten!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="technical">
+                    <div class="faq-question">
+                        <h3>Was mache ich, wenn ich mein Passwort vergessen habe?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nutzen Sie die "Passwort vergessen" Funktion auf der Login-Seite. Sie erhalten dann eine E-Mail mit einem Link zum Zurücksetzen Ihres Passworts. Falls das nicht funktioniert, kontaktieren Sie unseren Support.</p>
+                    </div>
+                </div>
+
+                <!-- Rechtliches -->
+                <div class="faq-item" data-category="legal">
+                    <div class="faq-question">
+                        <h3>Kann ich meinen Vertrag widerrufen?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ja, Sie haben ein 14-tägiges Widerrufsrecht ab Vertragsabschluss. Der Widerruf muss schriftlich per E-Mail an widerruf@7shining.com erfolgen. Bei bereits gelieferten Goldbarren müssen diese in einwandfreiem Zustand zurückgesendet werden.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="legal">
+                    <div class="faq-question">
+                        <h3>Ist 7Shining eine Bank oder Finanzdienstleister?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nein, 7Shining ist ein Verein und betreibt keine Bankgeschäfte, Finanzberatung oder Versicherungsvermittlung. Wir unterliegen nicht der Aufsicht der FINMA, Bafin oder FMA. Unsere Depot-Dienstleistungen sind private Vermittlungstätigkeiten.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="legal">
+                    <div class="faq-question">
+                        <h3>Wie kann ich kündigen?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Eine ordentliche Kündigung ist mit 30 Tagen Frist möglich. Senden Sie Ihre Kündigung schriftlich an info@7shining.com. Es gibt keine Mindestlaufzeit für Depot-Pakete.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="membership">
+                    <div class="faq-question">
+                        <h3>Erhalte ich eine Garantie auf Wertsteigerungen?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nein, 7Shining gibt keine Garantien für Wertsteigerungen oder -verluste von Goldbarren. Edelmetall-Investments unterliegen natürlichen Marktschwankungen. Gold wird traditionell als Wertaufbewahrungsmittel betrachtet, aber der Wert kann steigen oder fallen.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="technical">
+                    <div class="faq-question">
+                        <h3>Wie erreiche ich den Support?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Unser Support ist für Sie da:</p>
+                        <ul>
+                            <li><strong>E-Mail:</strong> support@7shining.com</li>
+                            <li><strong>Depot-Fragen:</strong> depot@7shining.com</li>
+                            <li><strong>Geschäftszeiten:</strong> Mo-Fr 09:00-17:00 Uhr</li>
+                        </ul>
+                        <p>Wir antworten in der Regel innerhalb von 24 Stunden.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="payment">
+                    <div class="faq-question">
+                        <h3>Kann ich meine Sparrate ändern?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ja, Sie können Ihre monatliche Sparrate jederzeit im Rahmen Ihres gewählten Pakets anpassen. Änderungen gelten ab dem nächsten Abrechnungsmonat. Bei größeren Änderungen können Sie auch zu einem anderen Paket wechseln.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="packages">
+                    <div class="faq-question">
+                        <h3>Was passiert mit überschüssigen Beträgen?</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Überschüssige Beträge, die nicht für einen ganzen Goldbarren reichen, werden automatisch für die nächste Quartalslieferung gutgeschrieben. So geht kein Geld verloren und Sie bauen kontinuierlich Ihr Gold-Depot auf.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- No Results Message -->
+            <div id="no-results" class="no-results" style="display: none;">
+                <h3>Keine Ergebnisse gefunden</h3>
+                <p>Ihre Suche ergab keine Treffer. Versuchen Sie es mit anderen Stichwörtern oder kontaktieren Sie unseren Support.</p>
+                <a href="index.html#contact" class="cta-button">Support kontaktieren</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Still have questions? -->
+    <section class="faq-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Frage nicht gefunden?</h2>
+                <p>Unser Support-Team hilft Ihnen gerne weiter. Kontaktieren Sie uns für eine persönliche Beratung.</p>
+                <div class="cta-buttons">
+                    <a href="index.html#contact" class="cta-button">Kontakt aufnehmen</a>
+                    <a href="mailto:support@7shining.com" class="secondary-button">E-Mail schreiben</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>7Shining</h4>
+                    <p>Mehr als ein Verein - eine Bewegung für Wachstum und Werte.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Über uns</a></li>
+                        <li><a href="packages.html">Depot-Pakete</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="index.html#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="agb.html">AGB</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
+                        <li><a href="impressum.html">Impressum</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 7Shining. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="faq.js"></script>
+</body>
+</html>

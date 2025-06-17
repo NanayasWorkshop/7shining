@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seite nicht gefunden - 7Shining</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="404.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html" style="color: inherit; text-decoration: none;">7Shining</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Über uns</a></li>
+                <li><a href="packages.html">Pakete</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="index.html#contact">Kontakt</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 404 Hero Section -->
+    <section class="error-hero">
+        <div class="container">
+            <div class="error-content">
+                <div class="error-animation">
+                    <span class="error-number">4</span>
+                    <span class="error-number">0</span>
+                    <span class="error-number">4</span>
+                </div>
+                
+                <h1>Oops! Sackgasse gefunden</h1>
+                <p>Hey, die Seite gibt es leider noch nicht oder wurde in der Zwischenzeit verschoben. Aber keine Sorge - wir arbeiten täglich daran, unsere Website zu erweitern!</p>
+                
+                <div class="error-suggestions">
+                    <h3>🤔 Was könntest du stattdessen tun?</h3>
+                    <div class="suggestions-grid">
+                        <div class="suggestion-item">
+                            <span class="suggestion-icon">🏠</span>
+                            <h4>Zurück zur Startseite</h4>
+                            <p>Entdecke unsere Vision und finde heraus, was 7Shining so besonders macht.</p>
+                            <a href="index.html" class="suggestion-link">Zur Startseite</a>
+                        </div>
+                        
+                        <div class="suggestion-item">
+                            <span class="suggestion-icon">📦</span>
+                            <h4>Depot-Pakete ansehen</h4>
+                            <p>Schau dir unsere transparenten Gold-Sparpläne an und finde das passende Paket.</p>
+                            <a href="packages.html" class="suggestion-link">Pakete entdecken</a>
+                        </div>
+                        
+                        <div class="suggestion-item">
+                            <span class="suggestion-icon">📞</span>
+                            <h4>Kontakt aufnehmen</h4>
+                            <p>Unser Team hilft dir gerne weiter und beantwortet deine Fragen persönlich.</p>
+                            <a href="index.html#contact" class="suggestion-link">Kontakt</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="back-actions">
+                    <button onclick="goBack()" class="secondary-button">
+                        ← Zurück zur vorherigen Seite
+                    </button>
+                    <a href="index.html" class="cta-button">
+                        🏠 Zur Startseite
+                    </a>
+                </div>
+
+                <div class="fun-fact">
+                    <h4>💡 Wusstest du schon?</h4>
+                    <p id="funFactText">Gold wird seit über 4000 Jahren als Wertaufbewahrungsmittel verwendet!</p>
+                    <button onclick="newFunFact()" class="fun-fact-btn">Neuer Fakt</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Floating Elements for Visual Interest -->
+        <div class="floating-elements">
+            <div class="float-element" style="--delay: 0s; --duration: 4s;">💎</div>
+            <div class="float-element" style="--delay: 1s; --duration: 5s;">🌟</div>
+            <div class="float-element" style="--delay: 2s; --duration: 3s;">✨</div>
+            <div class="float-element" style="--delay: 0.5s; --duration: 6s;">🔍</div>
+            <div class="float-element" style="--delay: 3s; --duration: 4s;">💫</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>7Shining</h4>
+                    <p>Mehr als ein Verein - eine Bewegung für Wachstum und Werte.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Über uns</a></li>
+                        <li><a href="packages.html">Depot-Pakete</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="index.html#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="agb.html">AGB</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
+                        <li><a href="impressum.html">Impressum</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 7Shining. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="404.js"></script>
+</body>
+</html>
