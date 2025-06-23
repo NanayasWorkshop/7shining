@@ -30,44 +30,6 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Contact Form Handling
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Get form data
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-    
-    // Basic validation
-    if (!name || !email || !message) {
-        alert('Bitte fülle alle Felder aus.');
-        return;
-    }
-    
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-        alert('Bitte gib eine gültige E-Mail-Adresse ein.');
-        return;
-    }
-    
-    // Simulate form submission
-    const submitButton = document.querySelector('#contactForm .cta-button');
-    const originalText = submitButton.textContent;
-    
-    submitButton.textContent = 'Wird gesendet...';
-    submitButton.disabled = true;
-    
-    // Simulate API call
-    setTimeout(() => {
-        alert('Vielen Dank! Deine Nachricht wurde erfolgreich gesendet.');
-        document.getElementById('contactForm').reset();
-        submitButton.textContent = originalText;
-        submitButton.disabled = false;
-    }, 2000);
-});
-
 // Intersection Observer for Animation on Scroll
 const observerOptions = {
     threshold: 0.1,
