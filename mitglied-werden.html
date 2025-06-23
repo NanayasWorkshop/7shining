@@ -6,6 +6,10 @@
     <title>Mitglied werden - 7Shining</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="mitglied-werden.css">
+    
+    <!-- Erfolgsassistent Partner Tracking -->
+    <script> var partnerScriptURL = "https://7shining.ch/home";</script>
+    <script src="https://7shining.ch/wbo/WBO/JS/partner.js" type="text/javascript"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -73,12 +77,6 @@
                             <li>✓ Kein Aufwand, aber viel Wirkung: Du stärkst unsere Basis – und das zählt</li>
                         </ul>
                     </div>
-                    
-                    <div class="membership-cta">
-                        <a href="https://7shining.ch/home/registrierung?partnerid=office" class="membership-button standard-btn" target="_blank">
-                            Mitglied werden
-                        </a>
-                    </div>
                 </div>
 
                 <!-- Active Membership -->
@@ -98,12 +96,6 @@
                             <li>✓ Profitieren von exklusiven Schulungen und Provisionen</li>
                             <li>✓ Du bist Teil eines engagierten Netzwerks, das sich gegenseitig fördert und trägt</li>
                         </ul>
-                    </div>
-                    
-                    <div class="membership-cta">
-                        <a href="https://7shining.ch/home/registrierung?partnerid=office" class="membership-button active-btn" target="_blank">
-                            Aktiv werden
-                        </a>
                     </div>
                 </div>
             </div>
@@ -197,7 +189,7 @@
         </div>
     </section>
 
-    <!-- Registration CTA -->
+    <!-- Registration Section with iFrame -->
     <section class="registration-cta">
         <div class="container">
             <div class="cta-content">
@@ -205,13 +197,9 @@
                 <p>Die Registrierung ist ganz einfach – und ganz gleich ob als Mitglied oder als aktives Mitglied ein Schritt der dein Leben bereichern wird.</p>
                 <p class="cta-highlight">Werde Teil von 7Shining. Denn dein Licht gehört in die Welt – und wir bringen es gemeinsam zum Strahlen.</p>
                 
-                <div class="final-cta-buttons">
-                    <a href="https://7shining.ch/home/registrierung?partnerid=office" class="cta-button primary" target="_blank">
-                        🟠 Aktive Mitgliedschaft
-                    </a>
-                    <a href="https://7shining.ch/home/registrierung?partnerid=office" class="cta-button secondary" target="_blank">
-                        🟡 Standard Mitgliedschaft
-                    </a>
+                <!-- Erfolgsassistent iFrame Integration -->
+                <div class="registration-form-container">
+                    <div style="width:100%;height:1900px;" id="wboRegistrationContainer"></div>
                 </div>
                 
                 <div class="registration-note">
