@@ -3,7 +3,7 @@
 /* FAQ Hero Section */
 .faq-hero {
     padding: 8rem 0 4rem;
-    background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
     text-align: center;
 }
 
@@ -11,7 +11,7 @@
     font-size: clamp(2.5rem, 5vw, 3.5rem);
     font-weight: 700;
     margin-bottom: 1.5rem;
-    color: #ffffff;
+    color: #1a1a1a;
 }
 
 .faq-hero .hero-content p {
@@ -21,7 +21,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3rem;
-    color: #e0e0e0;
+    color: #333333;
     line-height: 1.6;
 }
 
@@ -35,18 +35,18 @@
 .search-box input {
     width: 100%;
     padding: 1rem 3rem 1rem 1.5rem;
-    border: 2px solid #333333;
+    border: 2px solid #e0e0e0;
     border-radius: 50px;
-    background: #2a2a2a;
-    color: #ffffff;
+    background: #ffffff;
+    color: #1a1a1a;
     font-size: 1rem;
     transition: all 0.3s ease;
 }
 
 .search-box input:focus {
     outline: none;
-    border-color: #007aff;
-    background: #333333;
+    border-color: #D4AF37;
+    background: #f8f9fa;
 }
 
 .search-box input::placeholder {
@@ -66,7 +66,7 @@
 /* FAQ Categories */
 .faq-categories {
     padding: 3rem 0;
-    background: #1a1a1a;
+    background: #ffffff;
 }
 
 .faq-categories h2 {
@@ -74,7 +74,7 @@
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 2rem;
-    color: #ffffff;
+    color: #1a1a1a;
 }
 
 .category-tabs {
@@ -85,9 +85,9 @@
 }
 
 .tab-button {
-    background: #2a2a2a;
-    color: #e0e0e0;
-    border: 2px solid #333333;
+    background: #f8f9fa;
+    color: #333333;
+    border: 2px solid #e0e0e0;
     padding: 0.8rem 1.5rem;
     border-radius: 25px;
     font-size: 0.9rem;
@@ -97,20 +97,20 @@
 }
 
 .tab-button:hover {
-    border-color: #007aff;
-    background: #333333;
+    border-color: #D4AF37;
+    background: #ffffff;
 }
 
 .tab-button.active {
-    background: #007aff;
-    border-color: #007aff;
+    background: #D4AF37;
+    border-color: #D4AF37;
     color: #ffffff;
 }
 
 /* FAQ Content */
 .faq-content {
     padding: 4rem 0;
-    background: #222222;
+    background: #f8f9fa;
 }
 
 .faq-list {
@@ -119,8 +119,8 @@
 }
 
 .faq-item {
-    background: #2a2a2a;
-    border: 1px solid #333333;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
     border-radius: 12px;
     margin-bottom: 1rem;
     overflow: hidden;
@@ -128,8 +128,8 @@
 }
 
 .faq-item:hover {
-    border-color: #007aff;
-    box-shadow: 0 5px 15px rgba(0, 122, 255, 0.1);
+    border-color: #D4AF37;
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.1);
 }
 
 .faq-item.hidden {
@@ -146,20 +146,20 @@
 }
 
 .faq-question:hover {
-    background: #333333;
+    background: #f8f9fa;
 }
 
 .faq-question h3 {
     font-size: 1.1rem;
     font-weight: 600;
-    color: #ffffff;
+    color: #1a1a1a;
     margin: 0;
     line-height: 1.4;
 }
 
 .toggle-icon {
     font-size: 1.5rem;
-    color: #007aff;
+    color: #D4AF37;
     font-weight: 700;
     transition: transform 0.3s ease;
     flex-shrink: 0;
@@ -185,7 +185,7 @@
 .faq-answer p {
     font-size: 1rem;
     line-height: 1.6;
-    color: #e0e0e0;
+    color: #333333;
     opacity: 0.9;
     margin-bottom: 1rem;
 }
@@ -197,7 +197,7 @@
 .faq-answer ul {
     margin: 1rem 0;
     padding-left: 2rem;
-    color: #e0e0e0;
+    color: #333333;
 }
 
 .faq-answer li {
@@ -206,36 +206,36 @@
 }
 
 .faq-answer strong {
-    color: #ffffff;
+    color: #1a1a1a;
 }
 
 /* No Results */
 .no-results {
     text-align: center;
     padding: 4rem 2rem;
-    background: #2a2a2a;
+    background: #ffffff;
     border-radius: 12px;
-    border: 1px solid #333333;
+    border: 1px solid #e0e0e0;
 }
 
 .no-results h3 {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #ffffff;
+    color: #1a1a1a;
 }
 
 .no-results p {
     font-size: 1rem;
     margin-bottom: 2rem;
-    color: #e0e0e0;
+    color: #333333;
     opacity: 0.8;
 }
 
 /* FAQ CTA Section */
 .faq-cta {
     padding: 6rem 0;
-    background: linear-gradient(135deg, #007aff 0%, #0056b3 100%);
+    background: linear-gradient(135deg, #D4AF37 0%, #B8941F 100%);
     text-align: center;
 }
 
@@ -265,7 +265,7 @@
 
 .cta-buttons .cta-button {
     background: #ffffff;
-    color: #007aff;
+    color: #D4AF37;
 }
 
 .cta-buttons .cta-button:hover {
@@ -281,7 +281,7 @@
 
 .cta-buttons .secondary-button:hover {
     background: #ffffff;
-    color: #007aff;
+    color: #D4AF37;
 }
 
 /* Mobile Responsive */
