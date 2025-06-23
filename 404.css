@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, rgba(44, 44, 44, 0.4) 0%, rgba(26, 26, 26, 0.6) 100%), 
+    background: linear-gradient(135deg, rgba(244, 244, 244, 0.4) 0%, rgba(255, 255, 255, 0.6) 100%), 
                 url('milad-fakurian-DjjaZybYx4I-unsplash-e1663923748619.jpg') center/cover no-repeat;
     text-align: center;
     padding: 8rem 2rem 4rem;
@@ -31,20 +31,20 @@
 }
 
 .error-number {
-    color: #007aff;
+    color: #D4AF37;
 }
 
 .error-content h1 {
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 700;
     margin-bottom: 1.5rem;
-    color: #ffffff;
+    color: #1a1a1a;
 }
 
 .error-content > p {
     font-size: 1.2rem;
     margin-bottom: 3rem;
-    color: #e0e0e0;
+    color: #333333;
     opacity: 0.9;
     line-height: 1.6;
     max-width: 600px;
@@ -63,7 +63,7 @@
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 2rem;
-    color: #ffffff;
+    color: #1a1a1a;
 }
 
 .suggestions-grid {
@@ -77,9 +77,9 @@
 }
 
 .suggestion-item {
-    background: rgba(42, 42, 42, 0.9);
+    background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
-    border: 1px solid #333333;
+    border: 1px solid #e0e0e0;
     border-radius: 12px;
     padding: 2rem;
     text-align: center;
@@ -88,8 +88,8 @@
 
 .suggestion-item:hover {
     transform: translateY(-5px);
-    border-color: #007aff;
-    box-shadow: 0 10px 25px rgba(0, 122, 255, 0.1);
+    border-color: #D4AF37;
+    box-shadow: 0 10px 25px rgba(212, 175, 55, 0.1);
 }
 
 .suggestion-icon {
@@ -102,20 +102,20 @@
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 0.8rem;
-    color: #ffffff;
+    color: #1a1a1a;
 }
 
 .suggestion-item p {
     font-size: 0.95rem;
     line-height: 1.6;
     margin-bottom: 1.5rem;
-    color: #e0e0e0;
+    color: #333333;
     opacity: 0.8;
 }
 
 .suggestion-link {
     display: inline-block;
-    background: #007aff;
+    background: #D4AF37;
     color: white;
     padding: 0.8rem 1.5rem;
     text-decoration: none;
@@ -126,7 +126,7 @@
 }
 
 .suggestion-link:hover {
-    background: #0056b3;
+    background: #B8941F;
     transform: translateY(-2px);
 }
 
@@ -141,9 +141,9 @@
 
 /* Fun Fact Section */
 .fun-fact {
-    background: rgba(42, 42, 42, 0.8);
+    background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
-    border: 1px solid #333333;
+    border: 1px solid #e0e0e0;
     border-radius: 12px;
     padding: 2rem;
     margin: 3rem auto;
@@ -155,20 +155,20 @@
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #ffffff;
+    color: #1a1a1a;
 }
 
 .fun-fact p {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 1.5rem;
-    color: #e0e0e0;
+    color: #333333;
 }
 
 .fun-fact-btn {
     background: transparent;
-    color: #007aff;
-    border: 2px solid #007aff;
+    color: #D4AF37;
+    border: 2px solid #D4AF37;
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 0.9rem;
@@ -177,7 +177,7 @@
 }
 
 .fun-fact-btn:hover {
-    background: #007aff;
+    background: #D4AF37;
     color: white;
 }
 
@@ -218,7 +218,7 @@
 /* Quick Navigation */
 .quick-nav {
     padding: 4rem 0;
-    background: #222222;
+    background: #f8f9fa;
 }
 
 .quick-nav h2 {
@@ -226,7 +226,7 @@
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 2rem;
-    color: #ffffff;
+    color: #1a1a1a;
 }
 
 .quick-nav-grid {
@@ -243,19 +243,19 @@
     align-items: center;
     gap: 0.5rem;
     padding: 1.5rem 1rem;
-    background: #2a2a2a;
-    border: 1px solid #333333;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
     border-radius: 8px;
     text-decoration: none;
-    color: #e0e0e0;
+    color: #333333;
     transition: all 0.3s ease;
 }
 
 .quick-nav-item:hover {
     transform: translateY(-3px);
-    border-color: #007aff;
-    background: #333333;
-    color: #ffffff;
+    border-color: #D4AF37;
+    background: #f8f9fa;
+    color: #1a1a1a;
 }
 
 .nav-icon {
