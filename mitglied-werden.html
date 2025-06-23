@@ -103,7 +103,7 @@
                     </div>
                     
                     <div class="membership-cta">
-                        <a href="#registration-form" class="membership-button secondary-btn">📝 Jetzt anmelden</a>
+                        <button id="activeMembershipBtn" class="membership-button secondary-btn">📝 Jetzt anmelden</button>
                     </div>
                 </div>
             </div>
@@ -197,7 +197,7 @@
         </div>
     </section>
 
-    <!-- Registration Section with iFrame -->
+    <!-- Registration Section with Collapsible iFrame -->
     <section class="registration-cta" id="registration-form">
         <div class="container">
             <div class="cta-content">
@@ -205,8 +205,16 @@
                 <p>Die Registrierung ist ganz einfach – und ganz gleich ob als Mitglied oder als aktives Mitglied ein Schritt der dein Leben bereichern wird.</p>
                 <p class="cta-highlight">Werde Teil von 7Shining. Denn dein Licht gehört in die Welt – und wir bringen es gemeinsam zum Strahlen.</p>
                 
-                <!-- Erfolgsassistent iFrame Integration -->
-                <div class="registration-form-container">
+                <!-- Toggle Button for Registration Form -->
+                <div class="registration-toggle">
+                    <button id="toggleRegistrationBtn" class="toggle-button">
+                        <span class="toggle-icon">▼</span>
+                        <span class="toggle-text">Anmeldeformular öffnen</span>
+                    </button>
+                </div>
+                
+                <!-- Collapsible Erfolgsassistent iFrame Integration -->
+                <div class="registration-form-container" id="registrationFormContainer">
                     <div style="width:100%;height:1900px;" id="wboRegistrationContainer"></div>
                 </div>
                 
