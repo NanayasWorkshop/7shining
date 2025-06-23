@@ -190,6 +190,7 @@
     font-size: 4rem;
     margin-bottom: 1rem;
     display: block;
+    color: #D4AF37;
 }
 
 .membership-card h3 {
@@ -236,7 +237,7 @@
 .membership-button {
     display: block;
     width: 100%;
-    background: #D4AF37;
+    background: linear-gradient(135deg, #D4AF37, #B8941F);
     color: white;
     padding: 1.2rem 2rem;
     border: none;
@@ -250,17 +251,17 @@
 }
 
 .membership-button:hover {
-    background: #B8941F;
+    background: linear-gradient(135deg, #B8941F, #A67C00);
     transform: translateY(-3px);
     box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
 }
 
 .standard-btn {
-    background: linear-gradient(135deg, #f39c12, #e67e22);
+    background: linear-gradient(135deg, #D4AF37, #B8941F);
 }
 
 .standard-btn:hover {
-    background: linear-gradient(135deg, #e67e22, #d35400);
+    background: linear-gradient(135deg, #B8941F, #A67C00);
 }
 
 .active-btn {
@@ -490,21 +491,25 @@
     font-weight: 600;
     border-radius: 10px;
     min-width: 250px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
 .final-cta-buttons .cta-button.primary {
     background: linear-gradient(135deg, #D4AF37, #B8941F);
-    color: white;
     border: 2px solid #D4AF37;
 }
 
 .final-cta-buttons .cta-button.secondary {
-    background: linear-gradient(135deg, #f39c12, #e67e22);
-    color: white;
-    border: 2px solid #f39c12;
+    background: linear-gradient(135deg, #D4AF37, #B8941F);
+    border: 2px solid #D4AF37;
 }
 
 .final-cta-buttons .cta-button:hover {
+    background: linear-gradient(135deg, #B8941F, #A67C00);
     transform: translateY(-3px);
     box-shadow: 0 15px 30px rgba(212, 175, 55, 0.3);
 }
