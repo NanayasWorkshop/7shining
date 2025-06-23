@@ -467,7 +467,7 @@
     line-height: 1.5;
 }
 
-/* Registration CTA */
+/* Registration CTA with Collapsible iFrame */
 .registration-cta {
     padding: 6rem 0;
     background: #ffffff;
@@ -496,6 +496,108 @@
     opacity: 1 !important;
     margin-bottom: 3rem !important;
     font-style: italic;
+}
+
+/* Toggle Button Styles */
+.registration-toggle {
+    margin: 3rem 0;
+}
+
+.toggle-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: linear-gradient(135deg, #D4AF37, #B8941F);
+    color: white;
+    border: none;
+    padding: 1.2rem 2.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
+
+.toggle-button:hover {
+    background: linear-gradient(135deg, #B8941F, #A67C00);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+}
+
+.toggle-icon {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.toggle-button.active .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.toggle-text {
+    transition: all 0.3s ease;
+}
+
+/* Collapsible Registration Form Container */
+.registration-form-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.3s ease;
+    opacity: 0;
+    margin-top: 2rem;
+    border-radius: 15px;
+    background: #f8f9fa;
+    border: 2px solid #e0e0e0;
+}
+
+.registration-form-container.expanded {
+    max-height: 2000px;
+    opacity: 1;
+    padding: 2rem;
+    border-color: #D4AF37;
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.1);
+}
+
+.registration-form-container.expanding {
+    opacity: 1;
+}
+
+/* Registration Form Inner Styling */
+#wboRegistrationContainer {
+    transition: all 0.3s ease;
+}
+
+.registration-form-container.expanded #wboRegistrationContainer {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Loading State */
+.toggle-button.loading {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.toggle-button.loading .toggle-text::after {
+    content: "...";
+    animation: loadingDots 1.5s infinite;
+}
+
+@keyframes loadingDots {
+    0%, 20% { content: "..."; }
+    40% { content: "...."; }
+    60% { content: "....."; }
+    80%, 100% { content: "..."; }
 }
 
 .final-cta-buttons {
@@ -541,7 +643,7 @@
     border-radius: 10px;
     padding: 1.5rem;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 2rem auto 0;
 }
 
 .registration-note p {
@@ -616,6 +718,15 @@
     .growth-diagram {
         gap: 1.5rem;
     }
+    
+    .toggle-button {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+    
+    .registration-form-container.expanded {
+        padding: 1.5rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -655,5 +766,14 @@
     .spirit-content h2,
     .cta-content h2 {
         font-size: 2rem;
+    }
+    
+    .toggle-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .registration-form-container.expanded {
+        padding: 1rem;
     }
 }
