@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean Partner URL System - 7Shining</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            line-height: 1.6;
+            background: #f8f9fa;
+        }
+        
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        
+        h1 {
+            color: #D4AF37;
+            margin-bottom: 1rem;
+        }
+        
+        h2 {
+            color: #1a1a1a;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .demo-section {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        
+        .url-example {
+            background: #e8f4fd;
+            padding: 1rem;
+            border-radius: 6px;
+            font-family: monospace;
+            font-size: 0.9rem;
+            margin: 0.5rem 0;
+        }
+        
+        .conversion-demo {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .input-group {
+            margin-bottom: 1rem;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+        
+        input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+        
+        .result {
+            background: #f0f8ff;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-top: 1rem;
+            font-family: monospace;
+        }
+        
+        .button {
+            background: #D4AF37;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin: 0.5rem 0.5rem 0.5rem 0;
+        }
+        
+        .button:hover {
+            background: #B8941F;
+        }
+        
+        .test-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .test-link {
+            background: #ffffff;
+            border: 2px solid #D4AF37;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            text-decoration: none;
+            color: #1a1a1a;
+            transition: all 0.3s ease;
+        }
+        
+        .test-link:hover {
+            background: #D4AF37;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .code-block {
+            background: #1a1a1a;
+            color: #f0f0f0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            margin: 1rem 0;
+        }
+        
+        .highlight {
+            background: #D4AF37;
+            color: white;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Clean Partner URL System for 7Shining</h1>
+        <p>Transform ugly partner URLs into clean, professional links using hexadecimal encoding.</p>
+        
+        <div class="demo-section">
+            <h2>URL Transformation Examples</h2>
+            <p><strong>Instead of:</strong></p>
+            <div class="url-example">❌ https://7shining.ch/?partnerid=12345</div>
+            
+            <p><strong>You get:</strong></p>
+            <div class="url-example">✅ https://7shining.ch/packages/3039</div>
+            <div class="url-example">✅ https://7shining.ch/join/A1B2C3</div>
+            <div class="url-example">✅ https://7shining.ch/gold/FF1234</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>🔧 Live Converter Tool</h2>
+        <div class="conversion-demo">
+            <div>
+                <div class="input-group">
+                    <label for="decimalInput">Partner ID (Decimal)</label>
+                    <input type="number" id="decimalInput" placeholder="Enter partner ID (e.g., 12345)" value="12345">
+                </div>
+                <button class="button" onclick="convertToHex()">Convert to Hex</button>
+                <div class="result" id="hexResult">
+                    <strong>Hex:</strong> <span class="highlight">3039</span><br>
+                    <strong>Clean URL:</strong> https://7shining.ch/packages/3039
+                </div>
+            </div>
+            
+            <div>
+                <div class="input-group">
+                    <label for="hexInput">Hex Code</label>
+                    <input type="text" id="hexInput" placeholder="Enter hex code (e.g., 3039)" value="3039">
+                </div>
+                <button class="button" onclick="convertToDecimal()">Convert to Decimal</button>
+                <div class="result" id="decimalResult">
+                    <strong>Decimal:</strong> <span class="highlight">12345</span><br>
+                    <strong>Partner ID:</strong> 12345
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>🚀 Test Links</h2>
+        <p>Click these test links to see how clean URLs work:</p>
+        <div class="test-links">
+            <a href="#" class="test-link" onclick="simulatePartnerClick('1A2B')">
+                <strong>Gold Package</strong><br>
+                /packages/1A2B<br>
+                <small>Partner ID: 6699</small>
+            </a>
+            <a href="#" class="test-link" onclick="simulatePartnerClick('FF01')">
+                <strong>Premium Package</strong><br>
+                /packages/FF01<br>
+                <small>Partner ID: 65281</small>
+            </a>
+            <a href="#" class="test-link" onclick="simulatePartnerClick('ABC123')">
+                <strong>VIP Package</strong><br>
+                /packages/ABC123<br>
+                <small>Partner ID: 11256099</small>
+            </a>
+        </div>
+        <div id="testResult" class="result" style="display: none; margin-top: 1rem;">
+            <strong>Clicked URL:</strong> <span id="clickedUrl"></span><br>
+            <strong>Extracted Partner ID:</strong> <span id="extractedId"></span><br>
+            <strong>Redirect to:</strong> <span id="redirectUrl"></span>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>📝 Implementation Code</h2>
+        <p>Here's the JavaScript code to implement this system:</p>
+        
+        <div class="code-block">
+// Enhanced partner tracking system for clean URLs
+class PartnerTracker {
+    constructor() {
+        this.basePartnerURL = "https://7shining.ch/home";
+        this.init();
+    }
+    
+    init() {
+        // Check if we're on a clean partner URL
+        this.detectCleanPartnerURL();
+        
+        // Set up package button handlers
+        this.setupPackageButtons();
+    }
+    
+    // Convert decimal partner ID to hex
+    toHex(decimal) {
+        return parseInt(decimal).toString(16).toUpperCase();
+    }
+    
+    // Convert hex back to decimal partner ID
+    toDecimal(hex) {
+        return parseInt(hex, 16);
+    }
+    
+    // Detect clean partner URLs like /packages/A1B2C3
+    detectCleanPartnerURL() {
+        const path = window.location.pathname;
+        const patterns = [
+            /\/packages\/([A-F0-9]+)$/i,
+            /\/join\/([A-F0-9]+)$/i,
+            /\/gold\/([A-F0-9]+)$/i,
+            /\/([A-F0-9]{4,})$/i  // Direct hex at end of URL
+        ];
+        
+        for (let pattern of patterns) {
+            const match = path.match(pattern);
+            if (match) {
+                const hexCode = match[1];
+                const partnerID = this.toDecimal(hexCode);
+                
+                // Store partner ID
+                sessionStorage.setItem('partnerID', partnerID);
+                localStorage.setItem('partnerID', partnerID);
+                
+                console.log(`Clean URL detected: ${hexCode} → Partner ID: ${partnerID}`);
+                return partnerID;
+            }
+        }
+        
+        // Fallback: check for traditional ?partnerid= parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const traditionalPartnerID = urlParams.get('partnerid');
+        if (traditionalPartnerID) {
+            sessionStorage.setItem('partnerID', traditionalPartnerID);
+            localStorage.setItem('partnerID', traditionalPartnerID);
+            return traditionalPartnerID;
+        }
+        
+        return null;
+    }
+    
+    // Get stored partner ID
+    getPartnerID() {
+        return sessionStorage.getItem('partnerID') || 
+               localStorage.getItem('partnerID') || 
+               null;
+    }
+    
+    // Setup package button click handlers
+    setupPackageButtons() {
+        document.addEventListener('DOMContentLoaded', () => {
+            // Find all package buttons
+            const packageButtons = document.querySelectorAll('a[href*="/addproduct/"]');
+            
+            packageButtons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    const partnerID = this.getPartnerID();
+                    if (partnerID) {
+                        e.preventDefault();
+                        const originalURL = button.href;
+                        const newURL = `${originalURL}?partnerid=${partnerID}`;
+                        
+                        console.log(`Redirecting with partner ID: ${partnerID}`);
+                        console.log(`Original URL: ${originalURL}`);
+                        console.log(`New URL: ${newURL}`);
+                        
+                        window.location.href = newURL;
+                    }
+                });
+            });
+        });
+    }
+    
+    // Generate clean partner URL
+    generateCleanURL(partnerID, page = 'packages') {
+        const hexCode = this.toHex(partnerID);
+        return `https://7shining.ch/${page}/${hexCode}`;
+    }
+}
+
+// Initialize the partner tracker
+const partnerTracker = new PartnerTracker();
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>🔧 Server-Side URL Rewriting</h2>
+        <p>Add this to your .htaccess file to handle clean URLs:</p>
+        
+        <div class="code-block">
+# Clean Partner URLs - Add to .htaccess
+RewriteEngine On
+
+# Handle /packages/HEXCODE
+RewriteRule ^packages/([A-F0-9]+)/?$ /packages.html [L,QSA]
+
+# Handle /join/HEXCODE  
+RewriteRule ^join/([A-F0-9]+)/?$ /mitglied-werden.html [L,QSA]
+
+# Handle /gold/HEXCODE
+RewriteRule ^gold/([A-F0-9]+)/?$ /packages.html [L,QSA]
+
+# Handle direct hex codes
+RewriteRule ^([A-F0-9]{4,})/?$ /index.html [L,QSA]
+        </div>
+    </div>
+
+    <script>
+        // Live converter functions
+        function convertToHex() {
+            const decimal = document.getElementById('decimalInput').value;
+            if (decimal) {
+                const hex = parseInt(decimal).toString(16).toUpperCase();
+                document.getElementById('hexResult').innerHTML = `
+                    <strong>Hex:</strong> <span class="highlight">${hex}</span><br>
+                    <strong>Clean URL:</strong> https://7shining.ch/packages/${hex}
+                `;
+            }
+        }
+        
+        function convertToDecimal() {
+            const hex = document.getElementById('hexInput').value;
+            if (hex) {
+                const decimal = parseInt(hex, 16);
+                document.getElementById('decimalResult').innerHTML = `
+                    <strong>Decimal:</strong> <span class="highlight">${decimal}</span><br>
+                    <strong>Partner ID:</strong> ${decimal}
+                `;
+            }
+        }
+        
+        function simulatePartnerClick(hexCode) {
+            const decimal = parseInt(hexCode, 16);
+            const testResult = document.getElementById('testResult');
+            
+            document.getElementById('clickedUrl').textContent = `/packages/${hexCode}`;
+            document.getElementById('extractedId').textContent = decimal;
+            document.getElementById('redirectUrl').textContent = `https://7shining.ch/home/addproduct/10000?partnerid=${decimal}`;
+            
+            testResult.style.display = 'block';
+        }
+        
+        // Auto-convert on input
+        document.getElementById('decimalInput').addEventListener('input', convertToHex);
+        document.getElementById('hexInput').addEventListener('input', convertToDecimal);
+    </script>
+</body>
+</html>
