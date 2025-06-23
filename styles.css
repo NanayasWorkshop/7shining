@@ -72,6 +72,8 @@ nav.scrolled {
     flex-direction: column;
     cursor: pointer;
     padding: 0.5rem;
+    z-index: 1001;
+    position: relative;
 }
 
 .hamburger span {
